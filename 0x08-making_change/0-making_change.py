@@ -3,6 +3,7 @@
 Interview question task
 """
 
+
 def makeChange(coins, total):
     """
     Function to determine the fewest number of coins needed
@@ -26,4 +27,3 @@ def makeChange(coins, total):
             dp[i] = min(dp[i], dp[i - coin] + 1)
 
     return dp[total] if dp[total] != float('inf') else -1
-
