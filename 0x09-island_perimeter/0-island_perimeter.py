@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """ Island Perimeter """
 
+
 def island_perimeter(grid):
     """
     Returns the perimeter of the island described in grid.
     """
     if not grid or not grid[0]:
         return 0
-    
+
     def count_perimeter(i, j):
         """
         Counts the perimeter contributions of a land cell at (i, j).
@@ -29,5 +30,5 @@ def island_perimeter(grid):
         for j in range(len(grid[0])):
             if grid[i][j] == 1:
                 total_perimeter += count_perimeter(i, j)
-    
+
     return total_perimeter
