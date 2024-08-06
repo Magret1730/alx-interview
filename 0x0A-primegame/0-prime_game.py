@@ -4,6 +4,10 @@ Prime game
 """
 
 def isWinner(x, nums):
+    """
+    Function to determine the winner of a prime
+    game session with `x` rounds.
+    """
     def sieve(n):
         """
         Return a list of primes up to n (inclusive)
